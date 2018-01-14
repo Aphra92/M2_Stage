@@ -1,0 +1,439 @@
+/**********************************************
+ * Style du formulaire pour newdata et curation 
+ **********************************************/
+#tab {
+	width: 100%;
+    max-width: 1200px;
+    overflow-x: scroll;
+}
+
+#title {
+	display: flex;
+	flex-wrap: no-wrap;
+}
+
+#title input {
+	text-align:center;
+	background-color: #d1d1e0;
+	border: 2px solid #d1d1e0;
+	margin-bottom: 4px;
+}
+
+input[pattern]:invalid {
+	color:#cc0000;
+/*
+	background-color: #ffe6e6;
+*/
+}
+
+#corp > div {
+	display: flex;
+	flex-wrap: no-wrap;
+}
+
+/***************************
+ * Style de l'autocompletion 
+ ***************************/
+
+.ui-autocomplete {
+		max-height: 100px;
+		overflow-y: auto;
+		/* prevent horizontal scrollbar */
+		overflow-x: hidden;
+	}
+	/* IE 6 doesn't support max-height
+	 * we use height instead, but this forces the menu to always be this tall
+	 */
+	* html 
+
+.ui-autocomplete {
+		height: 100px;
+}
+
+/***************
+ * Style general
+ ***************/
+
+body {
+	 margin-left: 10%;
+	 margin-right: 10%;
+	 width : 80%;
+}
+
+/********
+ * Header
+ ********/
+
+header .head {
+	display: flex;
+	justify-content: space-between;	
+    margin-top : 10px;
+    margin-bottom: 10px;
+}
+
+header .head .elem1 {
+	display: inline-flex;
+	flex-basis: 550px;
+}
+
+header .head .elem2 {
+	display: flex;
+    justify-content: center;
+    align-items:center;
+	flex-basis: 550px;
+}
+
+/* Titre */
+
+.tcrtitle {
+    font-family: courier;
+    font-size: 50px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 40px;
+	border-bottom: 3px;
+	border-bottom-style: solid;
+	padding-bottom: 30px; 
+	border-image: linear-gradient(to left, rgba(255, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 50%, rgba(255, 0, 0, 0) 100%) 
+					0 0 100% 0/3px 0 3px 0 stretch;
+}
+
+/*******
+ * Liens
+ *******/
+ 
+a:link {
+    color: black;
+	text-decoration:none; 
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+/*****
+ * Nav
+ *****/
+
+nav {
+  padding: 15px;
+  text-align: center;
+  font-family: courier;
+  font-size: 18px;
+  Font-Weight: Bold;
+}
+
+#nav-1 {
+  background: white;
+}
+
+.link-1 {
+  transition: 0.5s ease;
+  background: white;
+  color: #34495e;
+  font-size: 15px;
+  border-top: 0px solid white;
+  border-bottom: 3px solid white;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+
+.link-1:hover {
+  border-top: 0px solid #34495e;
+  border-bottom: 3px solid red;
+  padding: 6px 0;
+}
+
+hr.style { 
+	border: 0; 
+	height: 1px; 
+	background-image: linear-gradient(to right, rgba(255, 0, 0, 0.75), rgba(255, 0, 0, 0.75), rgba(255, 0, 0, 0.75)); 
+}
+
+/************************
+ * Input recherche rapide
+ ************************/
+
+.head input[type=text] {
+	width: 100%;
+	padding: 15px 30px 15px 30px;
+	border-radius: 4px;
+    font-size: 16px;
+
+}
+
+.head input[type=text]:focus {
+	outline: none !important;
+    box-shadow: 0 0 20px black;    
+}
+
+/*******
+ * Index
+ ********/
+#contindex {
+	display: flex;
+	justify-content: center;
+/*
+	background-color: red;	
+*/
+}
+
+div.index {
+	display: inline-flex;
+	justify-content: flex-start;
+/*
+	background-color: red;
+*/
+}
+
+div.index .conteneur {
+	flex-basis: 500px;
+	text-align:center;
+}
+
+.droite {
+	border-left: 2px solid black;
+	border-right: 1px solid black;
+}
+.gauche {
+	border-right: 2px solid black;
+	border-left: 1px solid black;
+}
+.mid {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+div.index .conteneur:hover {
+    background-color:  #f0f0f5;
+}
+
+.image_index_1  {
+	width: 30%;
+}
+
+.image_header_1 {
+	height : 100px;
+}
+
+.center {
+	text-align:center;
+}
+
+/**************************************
+ * Style selection new data et curation
+ **************************************/
+ 
+/*
+#data_options {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 200px;
+	background-color:  #f0f0f5;
+}
+#data_choice1 {
+	order : 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-color:  red;
+}
+#data_choice2 {
+	order : 1;
+	background-color:  green;
+}
+
+#data_choice3 {
+	order : 3;
+	background-color:  blue;
+}
+
+#data_choice4 {
+	order : 4;	
+	background-color:  yellow;
+}
+
+.selectnumber { 
+	background-color:  blue;
+	width:30px;
+}
+*/
+
+/*********************************
+ * Style tableau des résultats tcr
+ *********************************/
+
+.resultats {
+	table-layout:fixed;
+	white-space:nowrap;
+}
+
+.resultats td {
+	padding: 15px;
+}
+
+.resultats th {
+	padding: 15px;
+}
+
+#resulttabdiv {
+	width: 100%;
+    max-width: 1200px;
+    overflow-x: scroll;
+}
+
+.resultats td{
+	text-align: left;
+}
+
+.col {
+	color:grey;
+}
+
+.numpage:hover {
+	color:red;
+}
+
+th.res {
+	border: thin solid  #ccc;
+	padding: 5px;
+	background-color: #e60000;
+	border-color:white;
+	color: white;
+	height : 30px;
+}
+
+.link {
+	font-style: italic;
+}
+
+.link:hover {
+	color:red;
+}
+
+/*********************
+ * Style des resultats
+ *********************/
+
+.resultpage {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.resultp {
+	margin: 0px auto;
+	table-layout:fixed;
+	height: 100%;
+	white-space:nowrap;
+	padding: 3px;
+}
+
+.resultp td {
+/*
+	background-color: pink;
+*/
+	height : 30px;
+}
+
+
+.titlegauche {
+	Font-Weight: Bold;
+/*
+	background-color: purple;
+*/
+	height : 30px;
+}
+
+.resultp.ref {
+	display: flex;
+    justify-content: center;
+	flex-basis: 100%;
+	background-color: blue;
+}
+
+/************
+ * Style dldc
+ ************/
+ 
+#seldlcl {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+/*
+	background-color: blue;
+*/
+}
+
+/****************
+ * Style research
+ ****************/
+#resultresearch {
+	width: 100%;
+    max-width: 1200px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#colname {
+/*
+	background-color: pink;
+*/
+	width: 200px;
+	padding-top:3px
+}
+
+#resultvalue {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+/*
+	background-color: blue;
+*/
+	max-width: 1000px;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+#colname th {
+	height : 30px;
+}
+#colname .res {
+	border: thin solid  #ccc;
+	padding: 5px;
+	background-color: white;
+	border-color:white;
+	color: white;
+	height : 30px;
+}
+#colname td {
+	height : 30px;
+}
+#resultvalue th {
+	width: 200px;
+	height : 30px;
+}
+#resultvalue td {
+	width: 200px;
+	height : 30px;
+}
+
+/****************************/
+
+.tomodif {
+	display:none;
+	width:0px;
+	opacity:0;
+}
+
+input[type=buttun]:hover {
+	background-color: red;
+	width:100%;
+}
